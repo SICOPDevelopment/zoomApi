@@ -1,2 +1,4 @@
 RewriteEngine on
-RewriteRule ^([^/]+)/? index.php?url=$1  [L,QSA]
+RewriteCond $1 !^(index.php) 
+RewriteRule ^([^/]+)/?/? api.php?url=$1  [L,QSA]
+
