@@ -1,7 +1,7 @@
 <?php
 
  if($_SERVER["REQUEST_METHOD"] == "POST"){
-        if($_GET['url'] == "hola-mundo"){
+        if($_GET['url'] == "hello-world"){
             $postData = $_POST['datos'];
             if(json_decode($postData) != null){
             $url = 'http://192.241.215.103:8888/';
